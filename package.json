@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx cypress run -b chrome --reporter mochawesome",
+    "test-headless": "npx cypress run --headless -b chrome --reporter mochawesome",
+    "clean-reports": "rm -rf cypress/reports",
+    "clean-screenshots": "rm -rf cypress/screenshots",
+    "clean-videos": "rm -rf cypress/videos",
+    "clean-all": "npm run clean-reports && npm run clean-screenshots && npm run clean-videos"
   },
   "repository": {
     "type": "git",
@@ -18,6 +23,13 @@
   },
   "homepage": "https://github.com/JCoimbraa/goomer#readme",
   "devDependencies": {
-    "cypress": "^7.5.0"
+    "cypress": "^7.5.0",
+    "@cucumber/cucumber": "^7.0.0",
+    "cypress-cucumber-preprocessor": "^2.5.5",
+    "mocha": "5.2.0",
+    "mochawesome": "^4.1.0",
+    "mochawesome-merge": "^4.0.3",
+    "mochawesome-report-generator": "^5.1.0",
+    "mochawesome-screenshots": "^1.6.0"
   }
 }
