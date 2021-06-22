@@ -16,7 +16,7 @@ Given('concluo a tarefa', function () {
     cy.conclude_task()
 });
 
-When('clico no botao {string}', function () {
+When('clico no botao Clear completed', function () {
     cy.clear_conclude_task()
 });
 

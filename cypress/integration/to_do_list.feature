@@ -10,7 +10,7 @@ Scenario: Concluir e Limpar Tarefa Concluida
     And incluo a tarefa "Caminhar"
     And incluo a tarefa "Correr"
     And concluo a tarefa
-    Then clico no botao "Clear completed"
+    Then clico no botao Clear completed
 
 Scenario: Deixar tarefa concluida como Pendente
     Given Acesso o sistema
