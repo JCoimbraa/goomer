@@ -24,11 +24,6 @@ Then('volto a tarefa para Pendente', function () {
     cy.take_off_finish_task()
 });
 
-
-Then('edito a descricao da tarefa para {string}', function (edit) {
-    cy.edit_task(edit)
-});
-
 When('atualizo a pagina', function () {
     cy.refresh_page()
 });
